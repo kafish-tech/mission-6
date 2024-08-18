@@ -8,4 +8,7 @@
 @import "bootstrap/scss/bootstrap";
 
 //其他自定義的元件
-@import "./helpers/style";
+@import "./helpers/main";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/index";
