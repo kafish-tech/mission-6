@@ -1,7 +1,4 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
-  @mixin pad{
+@mixin pad{
     @media(max-width: 768px){
     @content;
     }
@@ -12,4 +9,3 @@
     @content;
     }
   }
-}

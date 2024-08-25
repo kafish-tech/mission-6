@@ -1,27 +1,35 @@
-<nav class="navbar navbar-expand-lg bg-primary-100">
-  <div class="container-fluid">
-    <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> 
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
+<header class="bg-primary-100">
+  <nav class="navbar navbar-expand-lg border-bottom">
+    <div class="container-fluid">
+      <div class="container">
+        <a class="navbar-brand me-4  py-lg-5" href="index.html">Vivre</a>
+        <button class="navbar-toggler py-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex me-auto position-relative" role="search">
+            <input class="form-control bdra-1" type="search" placeholder="搜尋文章" aria-label="Search">
+            <button class="btn poaition-absolute end-0 top-50 translate-middle-y" type="submit">
+              <i class="bi bi-search text-secondary-200 text-success"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center gap-4">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">所有文章</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">訂閱方案</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">關於我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-success bdra-1" href="login_signup.html" type="button">登入 / 註冊</a>
+            </li>
+          </ul>
+          <!-- <button type="button" class="btn btn-success ">登入 / 註冊</button> -->
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
