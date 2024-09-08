@@ -1,0 +1,167 @@
+$font-weight-400: 400;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-900: 900;
+
+.fw-600{
+    font-weight: $font-weight-600;
+}
+.fw-700{
+    font-weight: $font-weight-700;
+}
+.fw-900{
+    font-weight: $font-weight-900;
+}
+
+$letter-spaceing-1:  0.05em;
+$letter-spaceing-2:  0.1em;
+
+.ls-1{
+    letter-spacing: $letter-spaceing-1;
+}
+.ls-2{
+    letter-spacing: $letter-spaceing-2;
+}
+// 先記錄桌機板和先以letter-spacing 排序，接著再以font-weight排序，第三則是
+
+@mixin fs-2-9-52{
+    letter-spacing: $letter-spaceing-2;
+    font-weight: $font-weight-900;
+    font-size: 52px;
+}
+@mixin fs-2-9-40{
+    letter-spacing: $letter-spaceing-2;
+    font-weight: $font-weight-900;
+    font-size: 40 px;
+}
+@mixin fs-2-9-32{
+    letter-spacing: $letter-spaceing-2;
+    font-weight: $font-weight-900;
+    font-size: 32px;
+}
+@mixin fs-2-9-28{
+    letter-spacing: $letter-spaceing-2;
+    font-weight: $font-weight-900;
+    font-size: 28px;
+}
+@mixin fs-2-9-24{
+    letter-spacing: $letter-spaceing-2;
+    font-weight: $font-weight-900;
+    font-size: 24px;
+}
+@mixin fs-2-9-20{
+    letter-spacing: $letter-spaceing-2;
+    font-weight: $font-weight-900;
+    font-size: 20px;
+}
+@mixin fs-2-7-24{
+    letter-spacing: $letter-spaceing-2;
+    font-weight: $font-weight-700;
+    font-size: 24px;
+}
+@mixin fs-2-7-20{
+    letter-spacing: $letter-spaceing-2;
+    font-weight: $font-weight-700;
+    font-size: 20px;
+}
+@mixin fs-2-7-16{
+    letter-spacing: $letter-spaceing-2;
+    font-weight: $font-weight-700;
+    font-size: 16px;
+}
+@mixin fs-1-6-16{
+    letter-spacing: $letter-spaceing-1;
+    font-weight: $font-weight-600;
+    font-size: 16px;
+}
+
+.font-2-9-52-40{
+    @include fs-2-9-52 ;
+    @include mobile {
+        font-size: 40px;
+    }
+}
+.font-2-9-40-28{
+    @include fs-2-9-40;
+    @include mobile{
+        font-size: 28px;
+    }
+}
+.font-2-9-32-24{
+    @include fs-2-9-32 ;
+    @include mobile{
+        font-size: 24px;
+    }
+}
+.font-2-9-24-20{
+    @include fs-2-9-24 ;
+    @include mobile{
+        font-size: 20px;
+    }
+}
+.font-2-9-24-7-16{
+    @include fs-2-9-24 ;
+    @include mobile{
+        font-weight: $font-weight-700;
+        font-size: 16px;
+    }
+}
+.font-2-9-20{
+    @include fs-2-9-20 ;
+}
+.font-2-9-20-7-16{
+    @include fs-2-9-20 ;
+    @include mobile{
+        font-weight: $font-weight-700;
+        font-size: 16px;
+    }
+}
+.font-2-7-24-20{
+    @include fs-2-7-24 ;
+    @include mobile{
+        font-size: 20px;
+    }
+}
+.font-2-7-20{
+    @include fs-2-7-20 ;
+}
+.font-2-7-20-16{
+    @include fs-2-7-20 ;
+    @include mobile{
+        font-size: 16px;
+    }
+}
+.font-2-7-16{
+    @include fs-2-7-16;
+}
+.font-2-7-16-12{
+    @include fs-2-7-16;
+    @include mobile{
+        font-size: 12px;
+    }
+}
+.font-2-7-16-1-6-16{
+    @include fs-2-7-16 ;
+    @include mobile{
+        letter-spacing: $letter-spaceing-1;
+        font-weight: $font-weight-600;
+        font-size: 16px;
+    }
+}
+.font-1-6-16{
+    @include fs-1-6-16 ;
+}
+.font-1-6-16-7{
+    @include fs-1-6-16 ;
+    @include mobile{
+        font-weight: $font-weight-700;
+    }
+}
+.font-1-6-16-2-4-14{
+    @include fs-1-6-16 ;
+    @include mobile{
+        letter-spacing: $letter-spaceing-2;
+        font-weight: $font-weight-400;
+        font-size: 14px;
+    }
+}

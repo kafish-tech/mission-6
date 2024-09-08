@@ -1,3 +1,233 @@
-.index-title {
-  font-size: 100px;
+.loginLogo{
+  @include mobile{
+    width: 100%;
+    max-width: 351px;
+  };
+}
+.bannerIndex{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner.png?raw=true');
+  height: 621px;
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner-sm.png?raw=true');
+    height: 551px;
+  }
+  background-size: cover;
+  background-position: center;
+}
+.theme{
+  position: relative;
+  height: 200px;
+  border-radius: 20px 0 20PX 0;
+  overflow: hidden; /* 確保圓角部分不會溢出 */
+  background-size: cover;
+  background-position: center;
+  @include mobile{
+    height: 84px;
+  }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.theme-1{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1-sm.png?raw=true');
+  }
+}
+.theme-2{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2-sm.png?raw=true');
+  }
+}
+.theme-3{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3-sm.png?raw=true');
+  }
+}
+.theme-4{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4-sm.png?raw=true');
+  }
+}
+.theme-5{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5-sm.png?raw=true');
+  }
+}
+.theme-6{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6-sm.png?raw=true');
+  }
+}
+.theme-7{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7-sm.png?raw=true');
+  }
+}
+.theme-8{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8-sm.png?raw=true');
+  }
+}
+.articleFlex{
+  width: 856px;
+  height: 432px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  @include mobile{
+    width: 100%; 
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+    white-space: normal;
+  }
+}
+.cardWidth{
+  width:404px;
+  height: 432px;
+  border: none; /* 移除所有預設的邊框 */
+  @include mobile{
+    min-width: 100%;
+    
+  }
+}
+.card-body{
+  padding: 0px;
+}
+.cardHr{
+  // 因為底線是直的，沒有圓弧狀
+  width:100%;
+  border: 1px solid $Neutral-500;
+  height: 0;
+}
+.swiperHr{
+  border:1px solid $Neutral-400;
+  width: 80px;  
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 0;
+}
+
+.dotImg-1{
+  width: 217px;
+  bottom:0;
+  left:0;
+  position: absolute;
+  @include mobile{
+    display: none;
+  }
+}
+.dotImg-2{
+  width: 300px;
+  bottom:0;
+  right:0;
+  position: absolute;
+  @include mobile{
+    display: none;
+  }
+}
+.dotImg-2-sm{
+  width: 160px;
+  bottom:0;
+  right:0px;
+  position: absolute;
+  display: none;
+  @include mobile{
+    display: block;
+  }
+}
+.g-10{
+  gap:10px;
+}
+.newsSlide{
+  gap: 24px;
+  height: 258px;
+}
+.newsSlide li a{
+  &.active, &:active {
+    background-color: $accent-100; 
+  }
+}
+.newsList{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.newsAriticle{
+  display: flex;
+  flex-wrap: nowrap; 
+  overflow-x: auto;
+}
+.lifeImg{
+  height: 192px;
+  border-radius: 4px;
+  overflow: hidden; /* 確保圓角部分不會溢出 */
+  background-size: cover;
+  background-position: center;
+}
+.lifeImg-1{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-1.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-1-sm.png?raw=true');
+  }
+}
+.lifeImg-2{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-2.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-2-sm.png?raw=true');
+  }
+}
+.lifeImg-3{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-3.png?raw=true');
+  @include mobile{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/life-3-sm.png?raw=true');
+  }
+}
+.projectHeight{
+  height: 592px;
+  @include mobile{
+    height: 467px;
+  }
+}
+.tagTitle{
+  display: flex;
+  gap:8px;
+  padding: 8px 12px;
+  border:1px $accent-100 solid;
+  border-radius: $border-radius-1;
+  color: $accent-300;
+  position: absolute;
+  top:-16px;
+  left: 16px;
+}
+.tagFooter{
+  padding: 12px 24px 16px 24px;
+  width: 100%;
+  position: absolute;
+  bottom:0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.projectOverflow{
+  @include mobile{
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+  }
 }
